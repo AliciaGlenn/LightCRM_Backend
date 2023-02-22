@@ -2,8 +2,7 @@
 
 ### Overview
 
-LightCRM is an easy to use friction less contact manager. Stripped of clunky unessential features LightCRM
-gives you exactly what you need to stay on top of your contacts.
+LightCRM is an easy-to-use frictionless contact manager stripped of clunky unessential features, LightCRM gives you exactly what you need to stay on top of your contacts.
 
 ### Technologies Used:
 
