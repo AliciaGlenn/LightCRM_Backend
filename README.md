@@ -8,19 +8,21 @@ gives you exactly what you need to stay on top of your contacts.
 ### Technologies Used:
 
 **Backend**
+
 Backend Repo
 
 - Django
 - Python
-- MongoDB◊
+- MongoDB
 - SendGrid API
 
 **Frontend**
+
 Frontend Repo
 
 - HTML
 - CSS
-- -Javascript
+- Javascript
 - ReactJS
 - Bootstrap
 
@@ -30,17 +32,23 @@ Frontend Repo
 
 **Frontend Routes**
 
-/ | GET | Index | **Description: Show all contacts
-/new | GET | New | **Description: Create new contact
-/contact/:Id | GET | show | **Description: Show contact with :id
-/contact/:Id/edit | GET | show | **Description: Show edit form for contact with :id
-/contact/:Id/delete | GET | show | \*\*Description: Show delete form for contact with :id
+/ | GET | Index | **Description**: Show all contacts
+
+/new | GET | New | **Description**: Create new contact
+
+/contact/:Id | GET | show | **Description**: Show contact with :id
+
+/contact/:Id/edit | GET | show | **Description**: Show edit form for contact with :id
+
+/contact/:Id/delete | GET | show | **Description**: Show delete form for contact with :id
 
 **Backend Routes**
 
-/ | POST | Create | **Description: Create a contact
-/:id | PATCH | Update | U**Description: Update contact with :id
-/:id | DELETE | Destroy | \*\*Description: Delete contact with :id
+/ | POST | Create | **Description**: Create a contact
+
+/:id | PATCH | Update | **Description**: Update contact with :id
+
+/:id | DELETE | Destroy | **Description**: Delete contact with :id
 
 ---
 
