@@ -7,7 +7,7 @@ gives you exactly what you need to stay on top of your contacts.
 
 ### Technologies Used:
 
-\*\*Backend
+**Backend**
 Backend Repo
 
 - Django
@@ -15,7 +15,7 @@ Backend Repo
 - MongoDB◊
 - SendGrid API
 
-\*\*Frontend
+**Frontend**
 Frontend Repo
 
 - HTML
@@ -26,8 +26,9 @@ Frontend Repo
 
 ---
 
-###Routes
-\*\*Frontend Routes
+### Routes
+
+**Frontend Routes**
 
 / | GET | Index | **Description: Show all contacts
 /new | GET | New | **Description: Create new contact
@@ -35,7 +36,7 @@ Frontend Repo
 /contact/:Id/edit | GET | show | **Description: Show edit form for contact with :id
 /contact/:Id/delete | GET | show | \*\*Description: Show delete form for contact with :id
 
-\*\*Backend Routes
+**Backend Routes**
 
 / | POST | Create | **Description: Create a contact
 /:id | PATCH | Update | U**Description: Update contact with :id
@@ -43,18 +44,18 @@ Frontend Repo
 
 ---
 
-###React Components Overview
+### React Components Overview
 
-\*\*Search bar
+**Search bar**
 Allow users to search for specific contacts and add new contacts.
 
-\*\*Contact List
+**Contact List**
 Display list of all contacts in the CRM
 
-\*\*Contact Details
+**Contact Details**
 Display additional details about individual contact
 
-\*\*Notes
+**Notes**
 Widget for user to add notes about individual contact and see previous notes.
 
 ---
@@ -65,7 +66,6 @@ Widget for user to add notes about individual contact and see previous notes.
 
 ### Website Mockup
 
-◊
 ![Tux, Index Page](./img/index.png)
 
 ![Tux, Show Page](./img/show.png)
