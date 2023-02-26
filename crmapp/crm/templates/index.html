@@ -1,0 +1,14 @@
+<h1>My Contacts</h1>
+
+<ul>
+  {% for contact in contacts %}
+  <li>
+    {{contact.companyName}} {{contact.person}} {{contact.personTitle}}
+    {{contact.emailAddress}} {{contact.usState}}
+  </li>
+  {% endfor %}
+  <form action="/contacts/" method="post">
+    {{form}}
+    <button>submit</button>
+  </form>
+</ul>
