@@ -19,6 +19,6 @@ from crm.views import index, destroy
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contacts/', index)
-    path('contacts/delete/<str: id>/', destroy)
+    path('contacts/', index),
+    path('contacts/delete/<str:id>/', destroy)
 ]

@@ -20,5 +20,5 @@ def index(request):
         return render(request, "index.html", {"contacts": contacts, "form": form })
 
 def destroy(request, id):
-    Contact.objects.destroy(id)
+    Contact.objects.get(pk=id).delete()
     return HttpResponseRedirect("/contacts/")
