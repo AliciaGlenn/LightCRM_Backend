@@ -1,4 +1,4 @@
-"""lightCRM URL Configuration
+"""CRM URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from crm.views import FirstView, SecondView, ThirdView,ContactView, ContactViewID
-from app.views import main_route
+from app.views import FirstView, SecondView, ThirdView, HomeView, ContactView, ContactViewID
+
 urlpatterns = [
-    path('', main_route.as_view()),
+    path('', HomeView.as_view()),
     path('admin/', admin.site.urls),
     # We associate our view class with a particular endpoint
     path("first/", FirstView.as_view()),
