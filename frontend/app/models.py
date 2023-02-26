@@ -2,6 +2,19 @@
 from django.db import models
 from django import forms
 
+class dealModel(models.Model):
+    crmChoices = [
+        ('A', 'Still Working'),
+        ('B', 'Won'),
+        ('C', 'Loss'),
+    ]
+    
+class priorityModel(models.Model):
+    priority = [
+        ('A', 'High Priority'),
+        ('B', 'Low Priority'),
+    ]
+
 #new model class
 class Contact(models.Model):
     # define a string field of max 100 characters
@@ -18,16 +31,3 @@ class Contact(models.Model):
     us_state = models.CharField(max_length=100)
     notes = forms.CharField(widget=forms.Textarea)
     
-
-class dealModel(models.Model):
-    crmChoices = [
-        ('A', 'Still Working'),
-        ('B', 'Won'),
-        ('C', 'Loss'),
-    ]
-    
-class priorityModel(models.Model):
-    priority = [
-        ('A', 'High Priority'),
-        ('B', 'Low Priority'),
-    ]

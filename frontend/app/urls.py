@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import FirstView, SecondView, ThirdView, HomeView
+from app.views import FirstView, SecondView, ThirdView, HomeView, ContactView, ContactViewID
 
 urlpatterns = [
     path('', HomeView.as_view()),
@@ -23,5 +23,8 @@ urlpatterns = [
     # We associate our view class with a particular endpoint
     path("first/", FirstView.as_view()),
     path("second/<param>/", SecondView.as_view()),
-    path("third/", ThirdView.as_view())
+    path("third/", ThirdView.as_view()),
+    path("contact/", ContactView.as_view()),
+    path('contact/<id>/', ContactViewID.as_view()),
+    
 ]
