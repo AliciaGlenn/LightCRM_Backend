@@ -30,7 +30,7 @@ DEBUG = 'RENDER' not in os.environ
 ALLOWED_HOSTS = []
 
 ## Handling Allowed Hosts on Render
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('https://lightcrm-backend.onrender.com')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
